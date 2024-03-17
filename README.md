@@ -21,18 +21,16 @@ _This video is not sped up or slowed down._
 }
 ```
 
-2. Create a virtualenv to run this Python process, install the requirements, and download the models. 
-```python
-virtualenv venv
-source venv/bin/activate
-pip install -r requirements.txt
-# First setup run. This will download several models to your ~/models folder.
-python app.py --setup 
-``` 
+2. Use the build script to create a virtualenv, install the requirements, and download the models. 
+```bash
+make build
+
+# if the build asks you to activate a venv, run the command it outputs, then run the build again
+```
 
 3. Run it! 
-```python
-python app.py
+```bash
+make start
 ```
 
 Enjoy your on-device Copilot! 
